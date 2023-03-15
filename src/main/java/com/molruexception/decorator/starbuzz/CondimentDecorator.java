@@ -1,6 +1,6 @@
 package com.molruexception.decorator.starbuzz;
 
-public abstract class CondimentDecorator {
+public abstract class CondimentDecorator extends Beverage {
 
     protected Beverage beverage;
 
