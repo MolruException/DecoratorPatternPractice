@@ -1,21 +1,21 @@
-package com.molruexception.decorator.starbuzz.decorator;
+package com.molruexception.decorator.starbuzz.decorator.topping;
 
 import com.molruexception.decorator.starbuzz.Beverage;
 import com.molruexception.decorator.starbuzz.CondimentDecorator;
 import org.jetbrains.annotations.NotNull;
 
-public class Soy extends CondimentDecorator {
+public class Whip extends CondimentDecorator {
 
-    public Soy(@NotNull Beverage beverage) {
+    public Whip(@NotNull Beverage beverage) {
         super(beverage);
     }
 
     public String getDescription() {
-        return beverage.getDescription() + ", 두유";
+        return beverage.getDescription() + ", 휘핑";
     }
 
     public double cost() {
-        return .15 + beverage.cost();
+        return .10 + beverage.cost();
     }
 
 }
